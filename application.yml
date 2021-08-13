@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: userservice
+  profiles:
+    active: default
+  datasource:
+    url: jdbc:postgresql://localhost:5433/cybertek
+    username: postgres
+    password: admin
+    driver-class-name: org.postgresql.Driver
+#    initialization-mode: always
+#    data: classpath:data.sql
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: create
+    show-sql: false
+
